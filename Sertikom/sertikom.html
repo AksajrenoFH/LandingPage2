@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertikom</title>
+    <link rel="stylesheet" href="sertikom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="FolderIMG/Logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <button onclick="buttonSaya()" id="myBtn">↑</button> -->
+    <div class="nav-top">
+        <ol>
+          <div id="nav">
+            <li id="button" onclick="paket()">Paket</li>
+            <li id="button" onclick="testimoni()">Testimoni</li>
+            <li id="button" onclick="populer()">Populer</li>
+            <li id="button" onclick="tentang()">Tentang Kami</li>
+            <li id="button" >Beranda</li>
+          </div>
+        </ol>
+        <ul>
+          <div class="li">
+              <img src="FolderIMG/Logo.png">
+              <li>EXPro Travel</li>
+          </div>
+        </ul>
+        <div class="tombol">
+            <!-- <button onclick="signin()" id="in">Sign In</button> -->
+            <button onclick="signup()" id="up">Contact Us</button>
+        </div>
+        <div id="menu">
+          <i id="menu-close" class="fa-solid fa-circle-xmark"></i>
+          <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="content">
+            <img src="FolderIMG/Logo2.png" alt="ExproTravel"><br><br><br>
+            <h1>ExploreWorld <br> <span>Membawa Anda Menjelajahi Dunia dengan Cara yang Berbeda</span></h1><br>
+            <div class="animate">
+                <div class="button">
+                    <p>Pesan Sekarang <br> Sebelum Terlambat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" data-aos="zoom-in">
+        <div class="tentang">
+            <div id="about">
+                <h1>Tentang Kami</h1>
+                <p>Kami adalah ExproTravel sebuah tim yang berdedikasi untuk membantu Anda untuk menjelajahi 
+                  dunia dengan cara yang lebih mudah, nyaman, dan berkesan. Dengan pengalaman bertahun-tahun 
+                  di industri travel, kami telah membantu ribuan pelancong menemukan destinasi impian mereka, 
+                  mulai dari wisata alam yang memukau hingga pengalaman budaya yang mendalam. Kami percaya 
+                  bahwa setiap perjalanan adalah kesempatan untuk menciptakan kenangan baru, dan itulah mengapa 
+                  kami memastikan setiap detail direncanakan dengan sempurna. Kami memahami bahwa setiap 
+                  pelancong memiliki gaya dan preferensi berbeda. Komitmen kami adalah memberikan layanan 
+                  terbaik, mulai dari proses perencanaan hingga Anda kembali dengan senyuman puas.</p>
+            </div>
+        </div>
+        <div class="img">
+            <img src="FolderIMG/Bali.jpg" alt="Bali">
+        </div>
+    </div><br><br><br>
+    
+    <div class="judul" data-aos="fade-up">
+      <h1>DESTINASI POPULER</h1><br>
+      <p>Nikmati pengalaman tak terlupakan dengan mengunjungi destinasi ikonik seperti <b> Bali, Raja Ampat,
+         Prambanan, Bromo, Pantai Merah dan Nusa Penida.</b><br> Setiap destinasi menawarkan keindahan alam, 
+         budaya, dan petualangan yang unik, menjadikannya pilihan tepat untuk liburan Anda.</p>
+    </div>
+    <div class="popular" data-aos="fade-up">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/UlunDanuBeratan.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Ulun Danu Beratan</p>
+                <p class="lokasi">Kawasan Begudul, Bali</p>
+                <p class="harga">Rp. 40.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Ulun Danu Beratan adalah pura ikonik di Bali yang terletak di tepi Danau Beratan, Bedugul, dikelilingi 
+                  pegunungan. Pura ini didedikasikan untuk Dewi Danu, dewi air, danau, dan sungai. Suasananya sejuk dan 
+                  asri.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/CandiPrambanan.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Candi Prambanan</p>
+                <p class="lokasi">Kecamatan Prambana, Jawa Tengah</p>
+                <p class="harga">Rp. 45.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Candi Prambanan adalah candi Hindu terbesar di Indonesia, terletak di Yogyakarta. Candi ini 
+                  didedikasikan untuk Trimurti: Brahma, Wisnu, dan Siwa. Arsitekturnya megah, penuh relief cerita 
+                  Ramayana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/NusaPenida.jpg" alt="NP">
+              <div id="text">
+                <p class="tempat">Nusa Penida</p>
+                <p class="lokasi">Nusa Penida, Bali</p>
+                <p class="harga">Rp. 25.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Nusa Penida adalah pulau indah di Bali dengan pantai eksotis, tebing curam, dan spot 
+                  snorkeling</p> seperti Manta Point. Destinasi ikoniknya meliputi Kelingking Beach, angel's 
+                  Bilabong, dan Pura Goa Giri Putri
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/GunungBromo.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Gunung Bromo</p>
+                <p class="lokasi">Kabupaten Probolinggo, Jawa Timur</p>
+                <p class="harga">Rp. 54.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Gunung berapi aktif di Jawa Timur yang menjadi bagian dari Taman Nasional Bromo Tengger Semeru. Dikenal 
+                  dengan kawahnya yang besar, lautan pasir luas, serta panorama matahari terbit yang luar biasa indah dari 
+                  Penanjakan. Tempat ini juga menjadi lokasi sakral bagi masyarakat Tengger.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/PantaiMerah.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Pantai Merah</p>
+                <p class="lokasi">Labuan Bajo, NTT</p>
+                <p class="harga">Rp. 10.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p> Pantai unik di Taman Nasional Komodo, Labuan Bajo, dengan pasir berwarna merah muda akibat campuran 
+                  pasir putih dan pecahan koral merah. Airnya sangat jernih, ideal untuk snorkeling atau diving, dengan 
+                  keindahan terumbu karang dan biota laut yang mempesona.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/RajaAmpat.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Raja Ampat</p>
+                <p class="lokasi">Papua Barat</p>
+                <p class="harga">Rp. 500.000,00 (TLTP)</p>
+              </div>
+              <div class="text">
+                <p>Kepulauan di Papua Barat yang dikenal sebagai surga dunia bawah laut. Terdiri dari ratusan pulau kecil 
+                  dengan keindahan karst, pantai-pantai eksotis, serta kekayaan biodiversitas laut tertinggi di dunia. 
+                  Cocok untuk penyelam dan pecinta alam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="popular-hp" data-aos="fade-up">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/UlunDanuBeratan.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Ulun Danu Beratan</p>
+                <p class="lokasi">Kawasan Begudul, Bali</p>
+                <p class="harga">Rp. 40.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Ulun Danu Beratan adalah pura ikonik di Bali yang terletak di tepi Danau Beratan, Bedugul, dikelilingi 
+                  pegunungan. Pura ini didedikasikan untuk Dewi Danu, dewi air, danau, dan sungai. Suasananya sejuk dan 
+                  asri.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/CandiPrambanan.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Candi Prambanan</p>
+                <p class="lokasi">Kecamatan Prambana, Jawa Tengah</p>
+                <p class="harga">Rp. 45.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Candi Prambanan adalah candi Hindu terbesar di Indonesia, terletak di Yogyakarta. Candi ini 
+                  didedikasikan untuk Trimurti: Brahma, Wisnu, dan Siwa. Arsitekturnya megah, penuh relief cerita 
+                  Ramayana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/NusaPenida.jpg" alt="NP">
+              <div id="text">
+                <p class="tempat">Nusa Penida</p>
+                <p class="lokasi">Nusa Penida, Bali</p>
+                <p class="harga">Rp. 25.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Nusa Penida adalah pulau indah di Bali dengan pantai eksotis, tebing curam, dan spot 
+                  snorkeling</p> seperti Manta Point. Destinasi ikoniknya meliputi Kelingking Beach, angel's 
+                  Bilabong, dan Pura Goa Giri Putri
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/GunungBromo.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Gunung Bromo</p>
+                <p class="lokasi">Kabupaten Probolinggo, Jawa Timur</p>
+                <p class="harga">Rp. 54.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p>Gunung berapi aktif di Jawa Timur yang menjadi bagian dari Taman Nasional Bromo Tengger Semeru. Dikenal 
+                  dengan kawahnya yang besar, lautan pasir luas, serta panorama matahari terbit yang luar biasa indah dari 
+                  Penanjakan. Tempat ini juga menjadi lokasi sakral bagi masyarakat Tengger.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/PantaiMerah.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Pantai Merah</p>
+                <p class="lokasi">Labuan Bajo, NTT</p>
+                <p class="harga">Rp. 10.000,00/orang</p>
+              </div>
+              <div class="text">
+                <p> Pantai unik di Taman Nasional Komodo, Labuan Bajo, dengan pasir berwarna merah muda akibat campuran 
+                  pasir putih dan pecahan koral merah. Airnya sangat jernih, ideal untuk snorkeling atau diving, dengan 
+                  keindahan terumbu karang dan biota laut yang mempesona.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dest">
+              <img src="FolderIMG/RajaAmpat.jpg" alt="">
+              <div id="text">
+                <p class="tempat">Raja Ampat</p>
+                <p class="lokasi">Papua Barat</p>
+                <p class="harga">Rp. 500.000,00 (TLTP)</p>
+              </div>
+              <div class="text">
+                <p>Kepulauan di Papua Barat yang dikenal sebagai surga dunia bawah laut. Terdiri dari ratusan pulau kecil 
+                  dengan keindahan karst, pantai-pantai eksotis, serta kekayaan biodiversitas laut tertinggi di dunia. 
+                  Cocok untuk penyelam dan pecinta alam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <br><br><br>
+    
+    <div class="judul" data-aos="flip-up">
+      <h1>TESTIMONI PENGUNJUNG</h1><br>
+      <p>Pendapat/Ulasan dari pengunjung yang telah mencoba memakai website ini dan mengunjungi tempat yang
+        telah dipilih berdasarkan keinginan mereka
+      </p>
+    </div><br><br><br>
+    <div class="testimoni" data-aos="flip-up">
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimoni">
+              <img id="CandiPrambanan swiper" src="FolderIMG/TestimoniCandiPrambanan.jpg" alt="TCP">
+              <div class="message">
+                <i class="fa-solid fa-quote-right quote"></i>
+                <div class="komentar">
+                  <p>"Mengunjungi Candi Prambanan adalah pengalaman yang luar biasa. Keindahan arsitektur 
+                    candinya sungguh memukau, terutama saat matahari terbenam. Panduan wisata yang tersedia 
+                    sangat informatif, membantu saya memahami sejarah dan cerita di balik setiap relief yang 
+                    ada di candi ini. Area sekitarnya juga terawat dengan baik, penuh dengan taman hijau yang 
+                    menambah kenyamanan selama berkeliling. Sangat direkomendasikan untuk siapa saja yang 
+                    tertarik dengan sejarah, budaya, atau hanya ingin menikmati keindahan candi yang megah 
+                    ini"</p>
+                </div>
+                <div class="profil">
+                  <img src="FolderIMG/orang/AkbotaAbkenova.jpg" alt="AA">
+                  <div class="namaprofil">
+                    <p class="namaorang">Akbota Abkenova</p>
+                    <p class="star">⭐⭐⭐⭐⭐</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimoni">
+              <img id="PantaiMerah swiper" src="FolderIMG/TestimoniPantaiMerah.jpg" alt="TPM">
+              <div class="message">
+                <i class="fa-solid fa-quote-right quote"></i>
+                <div class="komentar">
+                  <p>"Pantai Merah benar-benar luar biasa! Pasirnya yang berwarna pink terlihat sangat unik dan 
+                    memukau, terutama saat terkena sinar matahari. Airnya jernih, cocok untuk snorkeling dan 
+                    menikmati keindahan bawah laut yang penuh warna. Tempatnya juga sangat tenang, ideal untuk 
+                    relaksasi. Saya merasa sangat puas bisa mengunjungi salah satu pantai terindah di dunia ini. 
+                    Wajib masuk daftar perjalanan Anda jika ke Labuan Bajo!"</p>
+                </div>
+                <div class="profil">
+                  <img src="FolderIMG/orang/IanDooley.jpg" alt="ID">
+                  <div class="namaprofil">
+                    <p class="namaorang">Ian Dooley</p>
+                    <p class="star">⭐⭐⭐⭐⭐</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimoni">
+              <img id="RajaAmpat swiper" src="FolderIMG/TestimoniRajaAmpat.jpg" alt="TRA">
+              <div class="message">
+                <i class="fa-solid fa-quote-right quote"></i>
+                <div class="komentar">
+                  <p>"Raja Ampat adalah surga dunia yang nyata! Pemandangannya luar biasa indah, mulai dari 
+                    gugusan pulau-pulau kecil yang hijau hingga air laut yang sangat jernih. Snorkeling dan 
+                    diving di sini adalah pengalaman yang tidak terlupakan, dengan terumbu karang yang begitu 
+                    beragam dan ikan-ikan warna-warni yang mempesona. Selain itu, penduduk lokalnya sangat 
+                    ramah dan suasananya sangat tenang. Tempat ini benar-benar sempurna untuk melepas penat 
+                    dan menikmati keajaiban alam Indonesia. Tidak heran Raja Ampat disebut sebagai salah satu 
+                    destinasi terbaik di dunia!"</p>
+                </div>
+                <div class="profil">
+                  <img src="FolderIMG/orang/BrookeCagle.jpg" alt="BC">
+                  <div class="namaprofil">
+                    <p class="namaorang">Brooke Cagle</p>
+                    <p class="star">⭐⭐⭐⭐⭐</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimoni">
+              <img id="UlunDanuBeratan swiper" src="FolderIMG/TestimoniUlunDanuBeratan.jpg" alt="TUDB">
+              <div class="message">
+                <i class="fa-solid fa-quote-right quote"></i>
+                <div class="komentar">
+                  <p>"Ulun Danu Beratan adalah salah satu tempat paling indah yang pernah saya kunjungi di Bali.
+                     Pura yang terletak di tengah danau dengan latar belakang pegunungan menciptakan suasana 
+                     yang sangat tenang dan magis. Udara di sini sejuk dan segar, cocok untuk bersantai dan 
+                     menikmati pemandangan. Saya juga sangat terkesan dengan arsitektur pura yang khas dan 
+                     keasrian lingkungannya. Tempat ini sempurna untuk berfoto dan menikmati sisi spiritual 
+                     Bali. Sangat direkomendasikan untuk siapa saja yang mencari ketenangan dan keindahan 
+                     alam!"</p>
+                </div>
+                <div class="profil">
+                  <img src="FolderIMG/orang/ErikLucatero.jpg" alt="EL">
+                  <div class="namaprofil">
+                    <p class="namaorang">Erik Lucatero</p>
+                    <p class="star">⭐⭐⭐⭐⭐</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div><br><br><br><br><br><br>
+
+    <div class="judul" data-aos="fade-down">
+      <h1>PAKET POPULER</h1><br>
+      <p>Nikmati liburan terbaik dengan Paket Populer kami, mencakup destinasi ikonik seperti Bali, Raja Ampat,
+         dan Jawa, lengkap dengan transportasi, akomodasi, dan wisata. <br> Temukan pengalaman tak terlupakan 
+         bersama kami!
+      </p>
+    </div><br><br><br>
+
+    <div class="paket">
+      <div class="bali" data-aos="fade-right">
+        <div class="paketbali">
+          <div class="gambarpaket">
+            <img src="FolderIMG/paket/PaketBali.jpg" alt="PB">
+          </div>
+          <div class="judulpaket">
+            <p>Paket Bali Eksotis</p>
+          </div>
+          <div class="paketwisata">
+            <p>Rp 3.500.000,00</p>
+            <ul>
+              <li>Penjemputan Bandara serta <br transportasi</li>
+              <li>Menginap di Hotel berbintang <br> (3 hari 2 malam)</li>
+              <li>Kunjungan wisata serta <br> aktifitas di Bali</li>
+              <li>Mendapat hidangan di tempat<br> lokal/hotel</li>
+              <li>Tour Guide</li>
+            </ul>
+          </div>
+          <div class="tombolpaket">
+            <button onclick="bali()">Pilih Paket</button>
+          </div>
+        </div>
+      </div>
+      <div class="rajaAmpat" data-aos="fade-up">
+        <div class="paketRA">
+          <div class="gambarpaket">
+            <img src="FolderIMG/paket/PaketRajaAmpat.jpg" alt="PRA">
+          </div>
+          <div class="judulpaket">
+            <p>Paket Raja Ampat <br>Adventure</p>
+          </div>
+          <div class="paketwisata">
+            <p>Rp 7.500.000,00</p>
+            <ul>
+              <li>Tiket pulang pergi serta transportasi</li>
+              <li>Menginap di resort/homestay <br> (4 hari 3 malam)</li>
+              <li>Kunjungan wisata serta <br> aktifitas di Raja Ampat</li>
+              <li>Mendapat hidangan  di tempat<br> lokal/resort</li>
+              <li>Tour Guide</li>
+            </ul>
+          </div>
+          <div class="tombolpaket">
+            <button onclick="rajaAmpat()">Pilih Paket</button>
+          </div>
+        </div>
+      </div>
+      <div class="jawa" data-aos="fade-left">
+        <div class="paketjawa">
+          <div class="gambarpaket">
+            <img src="FolderIMG/paket/PaketJawa.jpg" alt="PJ">
+          </div>
+          <div class="judulpaket">
+            <p>Paket Jelajah Jawa</p>
+          </div>
+          <div class="paketwisata">
+            <p>Rp 5.000.000,00</p>
+            <ul>
+              <li>Tiket pesawat dan transportasi<br> pribadi</li>
+              <li>Menginap di Hotel berbintang <br>(5 hari 4 malam)</li>
+              <li>Kunjungan wisata serta <br>aktifitas di sana</li>
+              <li>Mendapat hidangan di tempat<br> lokal/hotel</li>
+              <li>Tour Guide</li>
+            </ul>
+          </div>
+          <div class="tombolpaket">
+            <button onclick="jawa()">Pilih Paket</button>
+          </div>
+        </div>
+      </div>
+    </div><div class="judul" data-aos="flip-up">
+      <h1>Hubungi Kami</h1><br>
+      <p>Untuk informasi lebih lanjut atau pemesanan, jangan ragu untuk menghubungi kami. Tim kami siap membantu 
+        Anda merencanakan liburan impian!</p>
+    </div><br><br><br>
+    <div class="callToAction">
+      <div class="form">
+        <form action="">
+          <label for="">Tulis Masukanmu disini</label><br><br>
+          <input type="text" required placeholder="Nama *" class="textform">
+          <input type="email" required placeholder="Email *" class="emailform">
+          <input type="text" required placeholder="Saran/Kritik *" class="masukanform">
+          <input type="button" value="Kirim Masukanmu" class="buttonform">
+        </form>
+      </div>
+      <div class="imgform">
+        <img src="FolderIMG/orang/ContactUs.jpg" alt="CU">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer1">
+        <div class="perusahaan">
+          <p class="iniTagp">ExproTravel</p><br>
+          <img src="FolderIMG/Logo.png" alt="EXPro"><br><br>
+          <div class="datang">
+            <div class="telepon">
+              <i class="fa-solid fa-phone"></i>
+              <p>(+62) 123-4567-8900</p>
+            </div><br>
+            <div class="emil">
+              <i class="fa-regular fa-envelope"></i>
+              <p>ini.email@gmail.com</p>
+            </div><br> 
+            <div class="lokasinya">
+              <i class="fa-solid fa-location-arrow"></i>
+              <p>Indonesia, Asia Tenggara</p>
+            </div>
+          </div>
+        </div>
+        <div class="lihat">
+          <p class="joedoel">Lihat Lengkap</p><br>
+          <div class="paketnya">
+            <p>Semua Paket</p>
+            <p>Semua Destinasi</p>
+            <p>Semua Testimoni</p>
+          </div>
+        </div>
+        <div class="sosmed">
+          <p class="joedoel">Sosial Media</p>
+          <div class="sosialMedia">
+            <p>Instagram</p>
+            <p>Youtube</p>
+            <p>Twitter</p>
+            <p>Facebook</p>
+            <p>Tiktok</p>
+            <p>Youtube</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer2">Copyright &copy; 2024 ExproTravel. All rights reserved.</div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="sertikom.js"></script>
+    <script>
+      // var swiper = new Swiper(".mySwiper", {
+      //   spaceBetween: 30,
+      //   loop: true,
+      //   centeredSlides: true,
+      //   pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      //   },
+      //   autoplay: {
+      //     delay: 5000,
+      //     disableOnInteraction: false,
+      //   },
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      // });
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 200,
+      loop: true,
+      speed:15500,
+      // slidesPerView: "auto",
+      // freeMode: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 90,
+      loop: true,
+      speed:15500,
+      // slidesPerView: "auto",
+      // freeMode: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper(".mySwiper3", {
+      slidesPerView: 1,
+      centeredSlides:true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
